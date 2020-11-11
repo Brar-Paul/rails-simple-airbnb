@@ -1,1 +1,60 @@
 @import "bootstrap/scss/bootstrap";
+
+.grid {
+  display: flex;
+}
+
+.card {
+  width: 18rem;
+  margin: 10px;
+}
+
+.map {
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 1200px;
+}
+
+.card-details-numbers {
+  display: flex;
+}
+
+.flex i {
+  font-size: 30px;
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.card{
+  background: #F8F9FA;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  border-radius: 3px;
+}
+
+.main-info {
+  width: 100%;
+}
+
+.description {
+  width: 100%;
+}
+
+.input-group-addon {
+  margin-right: 10px;
+}

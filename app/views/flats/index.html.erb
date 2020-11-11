@@ -1,0 +1,22 @@
+<h2>Available Flats</h2>
+
+<div class="container">
+  <div class="grid">
+    <% @flats.each do |flat| %>
+      <div class="card">
+        <img class="card-img-top" src="https://source.unsplash.com/random/200x200" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"> <%= flat.name %> </h5>
+          <p class="card-text"> <%= flat.description %> </p>
+          <div class="card-info" style="display: flex;">
+            <p>👪 <%= flat.number_of_guests %> | </p>
+            <p>💲 <%= flat.price_per_night %> </p>
+          </div>
+          <%= link_to "More Info", flat_path(flat), class: "btn btn-primary" %>
+          <%= link_to "Edit Listing", edit_flat_path(flat), class: "btn btn-warning" %>
+          <%= link_to "Delete Listing", flat_path(flat), method: :delete, class: "btn btn-danger" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -9,9 +9,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/stylesheets/uikit.min.css" />
+    <script src="../assets/js/uikit.min.js"></script>
+    <script src="../assets/js/uikit-icons.min.js"></script>
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/flats">Home</a>
+      <a class="navbar-brand" href="/flats/new">Add a Flat</a>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
